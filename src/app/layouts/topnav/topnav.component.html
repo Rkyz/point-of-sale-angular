@@ -1,0 +1,25 @@
+<div class="w-full flex md:items-center max-md:gap-[20px] max-md:flex-col justify-between py-[15px]">
+    <div class="max-md:flex max-md:items-center max-md:justify-between">
+        <div class="flex flex-col">
+            <h1 class="text-[20px] capitalize font-bold">Jaegar Restoran</h1>
+            <p class="text-gray-500 text-[14px] font-normal">Thuesday, 2 Feb 2024</p>
+        </div>
+        <button (click)="onToggle()" class="md:hidden">
+            open
+        </button>
+    </div>
+    <div class="flex gap-[15px] ">
+        <div class="bg-[#2D303E] rounded-md max-md:w-full flex">
+            <button class="p-[15px] text-[18px]">
+                <ng-icon name="ionSearch"></ng-icon>
+            </button>
+            <input
+                type="text"
+                placeholder="Search for food, coffe, etc"
+                class="bg-transparent outline-none pr-[15px] max-md:w-full h-full">
+            </div>
+            <button (click)="onToggle()" class="max-md:hidden text-[25px] bg-[#EA7C69] text-white px-[20px] rounded-md">
+                <ng-icon name="ionCartOutline"></ng-icon>
+            </button>
+    </div>
+    </div>

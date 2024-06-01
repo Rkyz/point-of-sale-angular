@@ -1,0 +1,70 @@
+<div class="md:rounded-r-[10px] max-md:px-[10px]  fixed max-md:left-0 h-full w-[90px] flex flex-col justify-between items-center max-md:w-full max-md:h-[100px] max-md:bottom-[10px]">
+    <div class="w-full bg-dark-main z-[50] h-full pb-[10px] max-md:rounded-lg max-md:overflow-hidden">
+        <ul class="w-full h-full gap-[20px] max-sm:gap-[30px] pl-[10px] md:pt-[20px] flex md:flex-col max-md:items-end max-md:justify-center">
+            <li class="text-[30px] pl-[12px] max-md:hidden">
+                <button class="bg-[#543C3B] w-[50px] h-[50px] text-[#EA7C69] rounded-md">
+                    <ng-icon name="ionStorefrontSharp"></ng-icon>
+                </button>
+            </li>
+            <li class="md:py-[12px] max-md:h-full max-md:flex max-md:items-end text-[20px] rounded-l-[10px] max-md:rounded-b-[10px] relative pl-[12px] max-md:px-[12px] max-md:pb-[12px]" [ngClass]="{'bg-dark-container': isActive('/dashboard'), 'bg-transparent': !isActive('/dashboard')}">
+                <button routerLink="/dashboard" [ngClass]="{'bg-[#EA7C69] before:shadow-[10px_-10px_0px_10px_#252836] after:shadow-[10px_10px_0px_10px_#252836] ': isActive('/dashboard'), 'bg-transparent text-[#EA7C69]': !isActive('/dashboard')}" class="w-[50px] h-[50px] rounded-md after:w-[10px] after:h-[10px] after:bg-dark-main max-md:before:bg-dark-main after:absolute after:-top-[10px] after:right-0 max-md:after:top-0 max-md:after:-left-[10px] max-md:before:top-0 max-md:before:-right-[10px] max-md:after:rounded-ee-full max-md:after:-rotate-90 max-md:after:bg-dark-main after:rounded-br-full before:w-[10px] before:h-[10px] before:absolute before:-bottom-[10px] before:rounded-tr-full max-md:before:rounded-se-full before:right-0 before:bg-dark-main max-md:before:-rotate-90">
+                    <ng-icon name="ionHomeOutline"></ng-icon>
+                </button>
+            </li>
+            <li class="md:py-[12px] max-md:h-full max-md:flex max-md:items-end text-[20px] rounded-l-[10px] max-md:rounded-b-[10px] relative pl-[12px] max-md:px-[12px] max-md:pb-[12px]" [ngClass]="{'bg-dark-container': isActive('/discount'), 'bg-transparent': !isActive('/discount')}">
+                <button routerLink="/discount" [ngClass]="{'bg-[#EA7C69] before:shadow-[10px_-10px_0px_10px_#252836] after:shadow-[10px_10px_0px_10px_#252836] ': isActive('/discount'), 'bg-transparent text-[#EA7C69]': !isActive('/discount')}" class="w-[50px] h-[50px] rounded-md after:w-[10px] after:h-[10px] after:bg-dark-main after:absolute after:-top-[10px] after:right-0 max-md:after:top-0 max-md:after:-left-[10px] max-md:before:top-0 max-md:before:-right-[10px] max-md:after:rounded-ee-full max-md:after:-rotate-90 max-md:before:bg-dark-main max-md:after:bg-dark-main after:rounded-br-full max-md:before:rounded-se-full before:w-[10px] before:h-[10px] before:absolute before:-bottom-[10px] before:rounded-tr-full before:right-0 before:bg-dark-main max-md:before:-rotate-90">
+                    <ng-icon name="bootstrapPercent"></ng-icon>
+                </button>
+            </li>
+            <li class="md:py-[12px] max-md:h-full max-md:flex max-md:items-end text-[20px] rounded-l-[10px] max-md:rounded-b-[10px] relative pl-[12px] max-md:px-[12px] max-md:pb-[12px]" [ngClass]="{'bg-dark-container': isActive('/data'), 'bg-transparent': !isActive('/data')}">
+                <button routerLink="/data" [ngClass]="{'bg-[#EA7C69] before:shadow-[10px_-10px_0px_10px_#252836] after:shadow-[10px_10px_0px_10px_#252836] ': isActive('/data'), 'bg-transparent text-[#EA7C69]': !isActive('/data')}" class="w-[50px] h-[50px] rounded-md after:w-[10px] after:h-[10px] after:bg-dark-main after:absolute after:-top-[10px] after:right-0 max-md:after:top-0 max-md:after:-left-[10px] max-md:before:top-0 max-md:before:-right-[10px] max-md:after:rounded-ee-full max-md:after:-rotate-90 max-md:before:bg-dark-main max-md:after:bg-dark-main after:rounded-br-full max-md:before:rounded-se-full before:w-[10px] before:h-[10px] before:absolute before:-bottom-[10px] before:rounded-tr-full before:right-0 before:bg-dark-main max-md:before:-rotate-90">
+                    <ng-icon name="ionPieChartOutline"></ng-icon>
+                </button>
+            </li>
+            <li class="md:py-[12px] max-sm:hidden max-md:h-full max-md:flex max-md:items-end text-[20px] rounded-l-[10px] max-md:rounded-b-[10px] relative pl-[12px] max-md:px-[12px] max-md:pb-[12px]" [ngClass]="{'bg-dark-container': isActive('/mail'), 'bg-transparent': !isActive('/mail')}">
+                <button routerLink="/mail" [ngClass]="{'bg-[#EA7C69] before:shadow-[10px_-10px_0px_10px_#252836] after:shadow-[10px_10px_0px_10px_#252836] ': isActive('/mail'), 'bg-transparent text-[#EA7C69]': !isActive('/mail')}" class="w-[50px] h-[50px] rounded-md after:w-[10px] after:h-[10px] after:bg-dark-main after:absolute after:-top-[10px] after:right-0 max-md:after:top-0 max-md:after:-left-[10px] max-md:before:top-0 max-md:before:-right-[10px] max-md:after:rounded-ee-full max-md:after:-rotate-90 max-md:before:bg-dark-main max-md:after:bg-dark-main after:rounded-br-full max-md:before:rounded-se-full before:w-[10px] before:h-[10px] before:absolute before:-bottom-[10px] before:rounded-tr-full before:right-0 before:bg-dark-main max-md:before:-rotate-90">
+                    <ng-icon name="ionMailOutline"></ng-icon>
+                </button>
+            </li>
+            <li class="md:py-[12px] max-sm:hidden max-md:h-full max-md:flex max-md:items-end text-[20px] rounded-l-[10px] max-md:rounded-b-[10px] relative pl-[12px] max-md:px-[12px] max-md:pb-[12px]" [ngClass]="{'bg-dark-container': isActive('/notification'), 'bg-transparent': !isActive('/notification')}">
+                <button routerLink="/notification" [ngClass]="{'bg-[#EA7C69] before:shadow-[10px_-10px_0px_10px_#252836] after:shadow-[10px_10px_0px_10px_#252836] ': isActive('/notification'), 'bg-transparent text-[#EA7C69]': !isActive('/notification')}" class="w-[50px] h-[50px] rounded-md after:w-[10px] after:h-[10px] after:bg-dark-main after:absolute after:-top-[10px] after:right-0 max-md:after:top-0 max-md:after:-left-[10px] max-md:before:top-0 max-md:before:-right-[10px] max-md:after:rounded-ee-full max-md:after:-rotate-90 max-md:before:bg-dark-main max-md:after:bg-dark-main after:rounded-br-full max-md:before:rounded-se-full before:w-[10px] before:h-[10px] before:absolute before:-bottom-[10px] before:rounded-tr-full before:right-0 before:bg-dark-main max-md:before:-rotate-90">
+                    <ng-icon name="bootstrapBell"></ng-icon>
+                </button>
+            </li>
+            <li class="md:py-[12px] max-sm:hidden max-md:h-full max-md:flex max-md:items-end text-[20px] rounded-l-[10px] max-md:rounded-b-[10px] relative pl-[12px] max-md:px-[12px] max-md:pb-[12px]" [ngClass]="{'bg-dark-container': isActive('/setting'), 'bg-transparent': !isActive('/setting')}">
+                <button routerLink="/setting" [ngClass]="{'bg-[#EA7C69] before:shadow-[10px_-10px_0px_10px_#252836] after:shadow-[10px_10px_0px_10px_#252836] ': isActive('/setting'), 'bg-transparent text-[#EA7C69]': !isActive('/setting')}" class="w-[50px] h-[50px] rounded-md after:w-[10px] after:h-[10px] after:bg-dark-main after:absolute after:-top-[10px] after:right-0 max-md:after:top-0 max-md:after:-left-[10px] max-md:before:top-0 max-md:before:-right-[10px] max-md:after:rounded-ee-full max-md:after:-rotate-90 max-md:before:bg-dark-main max-md:after:bg-dark-main after:rounded-br-full max-md:before:rounded-se-full before:w-[10px] before:h-[10px] before:absolute before:-bottom-[10px] before:rounded-tr-full before:right-0 before:bg-dark-main max-md:before:-rotate-90">
+                    <ng-icon name="ionSettingsOutline"></ng-icon>
+                </button>
+            </li>
+            <li class="md:py-[12px] sm:hidden max-md:h-full max-md:flex max-md:items-end text-[20px] rounded-l-[10px] max-md:rounded-b-[10px] relative pl-[12px] max-md:px-[12px] max-md:pb-[12px]" [ngClass]="{'bg-dark-container': !appStatusService.isOpen, 'bg-transparent': appStatusService.isOpen}">
+                <button (click)="onOpen()"  [ngClass]="{'bg-[#EA7C69] before:shadow-[10px_-10px_0px_10px_#252836] after:shadow-[10px_10px_0px_10px_#252836] ': !appStatusService.isOpen, 'bg-transparent text-[#EA7C69]': appStatusService.isOpen}" class="w-[50px] h-[50px] rounded-md after:w-[10px] after:h-[10px] after:bg-dark-main after:absolute after:-top-[10px] after:right-0 max-md:after:top-0 max-md:after:-left-[10px] max-md:before:top-0 max-md:before:-right-[10px] max-md:after:rounded-ee-full max-md:after:-rotate-90 max-md:before:bg-dark-main max-md:after:bg-dark-main after:rounded-br-full max-md:before:rounded-se-full before:w-[10px] before:h-[10px] before:absolute before:-bottom-[10px] before:rounded-tr-full before:right-0 before:bg-dark-main max-md:before:-rotate-90">
+                    <ng-icon name="ionOpenOutline"></ng-icon>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div class="w-full h-auto max-md:absolute md:pb-[20px] max-md:px-[10px] md:bg-dark-main max-md:bottom-[110px]" *ngIf="!appStatusService.isOpen">
+        <ul class="w-full h-full md:pl-[10px] gap-[20px] flex flex-col rounded-md overflow-hidden max-md:bg-dark-main">
+            <li class="bg-dark-main md:pl-[13px] text-[20px] rounded-l-[10px] relative">
+                <button class="bg-transparent text-[#EA7C69] max-md:w-full w-[50px] h-[50px] rounded-md md:after:w-[10px] md:after:h-[10px] md:after:bg-dark-main md:after:absolute md:after:-top-[10px] md:after:right-0 md:after:rounded-br-full md:before:w-[10px] md:before:h-[10px] md:before:absolute md:before:-bottom-[10px] md:before:rounded-tr-full md:before:right-0 md:before:bg-dark-main ">
+                    <ng-icon name="ionLogOutOutline"></ng-icon>
+                </button>
+            </li>
+            <li class="md:hidden">
+                <button class="text-[#EA7C69] max-md:w-full h-[50px] text-left">
+                    <ng-icon name="bootstrapBell"></ng-icon>
+                </button>
+            </li>
+            <li class="md:hidden">
+                <button class="text-[#EA7C69] max-md:w-full h-[50px] text-left">
+                    <ng-icon name="ionMailOutline"></ng-icon>
+                </button>
+            </li>
+            <li class="md:hidden">
+                <button class="text-[#EA7C69] max-md:w-full h-[50px] text-left">
+                    <ng-icon name="ionSettingsOutline"></ng-icon>
+                </button>
+            </li>
+        </ul>
+    </div>
+</div>
